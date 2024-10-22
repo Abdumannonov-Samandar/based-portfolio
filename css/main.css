@@ -8,6 +8,14 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -230,3 +238,110 @@ body {
 @media (max-width: 425px) {
     
 }
+
+/* Hero end */
+
+/* Skills Start*/
+
+.skills {
+    padding: 60px 0;
+}
+
+.skill__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill__title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.skill__span {
+    font-weight: 800;
+}
+
+.skill__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 71.5px
+}
+
+.skill__list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    width: 186px;
+    height: 186px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    background-color: white;
+    transition: background-color 0.3s ease, color 0.3s ease, filter 0.3s ease;
+}
+
+.skill__item-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.skill__item-logo img {
+    width: 56px;
+    height: 56px;
+    transition: filter 0.3s ease;
+}
+
+.skill__list-item:hover {
+    background-color: black;
+}
+
+.skill__list-item:hover .skill__item-title {
+    color: white;
+}
+
+.skill__list-item:hover .skill__item-logo {
+    filter: invert(1);
+}
+
+@media (max-width: 1024px) {
+    .skill__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 71.5px
+    }
+}
+
+@media (max-width: 768px) {
+    .skill__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px
+    }
+}
+
+@media (max-width: 426px) {
+    .skill__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px
+    }
+}
+
+@media (max-width: 321px) {
+    .skill__list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px
+    }
+}
+
+
+/* Skills End */

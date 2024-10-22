@@ -397,6 +397,7 @@ a {
 
 .exp__list-item:hover {
     background-color: #27272A;
+    transition: all;
 }
 
 .exp__row {
@@ -444,3 +445,59 @@ a {
 
 /* Exp End */
 
+
+
+/* About Me */
+
+.about {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.about__row {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.about__colum {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+
+.about__par {
+    color: #71717A;
+}
+
+@media (max-width: 426px) {
+    .about__row {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .about {
+        padding: 40px 0;
+    }
+    .about__img {
+        width: 100%;
+        height: 374px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .about__row {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .about {
+        padding: 40px 0;
+    }
+    
+}
+
+/* About End */
